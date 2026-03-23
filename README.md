@@ -23,7 +23,6 @@ This project is perfect for enhancing your personal website, portfolio, or any w
 - [Overview](#overview)
 - [Getting Started](#getting-started)
 - [Customisation](#customisation)
-- [Contributing](#contributing)
 
 ## Overview
 
@@ -37,4 +36,74 @@ This banner includes:
 
 1. **Clone the Repository**
    ```bash
+   git clone https://github.com/your-username/animated_banner_github.git
+   ```
+
+2. **Open the folder in VSCode**
+
+3. **Install the LiveServer extension**
+
+   - Search "LiveServer" in the extensions tab and hit install
+
+5. **Right-click 'index.html' --> open with LiveServer**
+
+   - The file will open in your browser and look pretty :)
+
+Note: Simply double-clicking the index.html file to opwn it may cause it to not load in properly (the css may not load). make sure to use LiveServer.
    
+## Customisation
+
+**change the typing text** — in `script.js`:
+```js
+const text = "Hi, I'm Anusha";
+```
+ 
+**change the skill bar words** — in `script.js`:
+```js
+const barData = [
+  { word: 'AI',     color: 'b-cyan',   dots: [1, 1, 1, 0] },
+  { word: 'PYTHON', color: 'b-amber',  dots: [1, 1, 1, 1] },
+];
+```
+ 
+**change the tagline** — in `index.html`:
+```html
+<span class="tag-text tc1">Cognitive Science</span>
+<span class="tag-text tc2">ML & Neural Computation</span>
+<span class="tag-text tc3">Data Science</span>
+```
+ 
+**available bar colors:**
+ 
+| class | color |
+|-------|-------|
+| `b-cyan` | blue |
+| `b-purple` | purple |
+| `b-green` | green |
+| `b-pink` | pink |
+| `b-amber` | yellow |
+| `b-sky` | light blue |
+
+
+## Adding it to your Profile
+ 
+GitHub READMEs don't support live html, so you'll convert it to a gif first.
+ 
+**Step 1 — record it**
+- open it in chrome via live server
+- screen record your browser tab
+- record ~6 seconds to capture the animations, then stop
+ 
+**Step 2 — convert to gif**
+- go to [ezgif.com/video-to-gif](https://ezgif.com/video-to-gif)
+- upload your screen recording, hit convert, download the gif
+ 
+**Step 3 — add to your README**
+- upload the gif to your profile repository (`yourusername/yourusername`)
+- add this to the top of your `README.md`:
+ 
+```markdown
+![banner](./animated_banner.gif)
+```
+
+## and that's it! you did it! :)
